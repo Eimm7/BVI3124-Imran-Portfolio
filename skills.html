@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skills | Imran Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header>
+  <nav class="container">
+    <a class="logo" href="index.html">Imran <span>Portfolio</span></a>
+
+    <button id="menuToggle" aria-label="Toggle menu"
+            aria-controls="navLinks" aria-expanded="false">☰</button>
+
+    <ul id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="skills.html" class="active" aria-current="page">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <button id="themeToggle" aria-label="Change theme">☀</button>
+  </nav>
+</header>
+
+<!-- MAIN CONTENT -->
+<main class="container section">
+
+  <h1>My Skills</h1>
+  <p>These proficiency levels are based on my self-assessment.</p>
+
+  <!-- SKILL CATEGORY BUTTONS -->
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="technical"
+            aria-pressed="true">Technical Skills</button>
+
+    <button class="tab-btn" data-tab="soft"
+            aria-pressed="false">Soft Skills</button>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <section id="technical" class="skill-panel">
+    <h2>Technical Skills</h2>
+
+    <div class="grid two">
+
+      <article class="card">
+        <h3>Automation</h3>
+
+        <div class="skill">
+          PLC Programming – Intermediate
+          <div class="bar" data-level="65"></div>
+        </div>
+
+        <div class="skill">
+          Collaborative Robotics – Intermediate
+          <div class="bar" data-level="65"></div>
+        </div>
+
+        <div class="skill">
+          PLC Networking – Intermediate
+          <div class="bar" data-level="65"></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Embedded Systems</h3>
+
+        <div class="skill">
+          Arduino Programming – Advanced
+          <div class="bar" data-level="85"></div>
+        </div>
+
+        <div class="skill">
+          ESP32 / IoT – Advanced
+          <div class="bar" data-level="85"></div>
+        </div>
+
+        <div class="skill">
+          Circuit Design – Advanced
+          <div class="bar" data-level="85"></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Software Development</h3>
+
+        <div class="skill">
+          HTML, CSS, JavaScript – Intermediate
+          <div class="bar" data-level="65"></div>
+        </div>
+
+        <div class="skill">
+          Python – Intermediate
+          <div class="bar" data-level="65"></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Other Technical Skills</h3>
+
+        <div class="skill">
+          Mechanical Integration – Advanced
+          <div class="bar" data-level="85"></div>
+        </div>
+
+        <div class="skill">
+          Microsoft Office – Advanced
+          <div class="bar" data-level="85"></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SOFT SKILLS -->
+  <section id="soft" class="skill-panel" hidden>
+    <h2>Soft Skills</h2>
+
+    <div class="grid two">
+
+      <!-- CORRECTED: Added heading -->
+      <article class="card">
+        <h3>Personal Skills</h3>
+
+        <div class="skill">
+          Teamwork – Advanced
+          <div class="bar" data-level="85"></div>
+        </div>
+
+        <div class="skill">
+          Problem-Solving – Advanced
+          <div class="bar" data-level="85"></div>
+        </div>
+      </article>
+
+      <!-- CORRECTED: Added heading -->
+      <article class="card">
+        <h3>Professional Skills</h3>
+
+        <div class="skill">
+          Communication – Intermediate
+          <div class="bar" data-level="65"></div>
+        </div>
+
+        <div class="skill">
+          Leadership – Intermediate
+          <div class="bar" data-level="65"></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SOFTWARE AND TOOLS -->
+  <section class="section">
+    <h2>Software &amp; Tools</h2>
+
+    <div class="grid two">
+
+      <article class="card">
+        <h3>Automation &amp; Design</h3>
+
+        <p>
+          CX-Programmer, CX-Designer, Sysmac Studio,
+          CODESYS, AutoCAD, EPLAN, Proteus,
+          FreeCAD and PI Studio.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Programming &amp; Networking</h3>
+
+        <p>
+          Arduino IDE, Visual Studio Code,
+          MySQL Workbench, Wireshark,
+          Cisco Packet Tracer and RealVNC.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- LANGUAGE PROFICIENCY -->
+  <section>
+    <h2>Languages</h2>
+
+    <p><strong>Bahasa Melayu:</strong> Native</p>
+    <p><strong>English:</strong> Advanced</p>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    &copy; <span id="currentYear">2026</span>
+    Muhammad Imran Hakim bin Latif
+  </p>
+
+  <p>
+    <a href="https://github.com/Eimm7"
+       target="_blank" rel="noopener noreferrer">GitHub</a> |
+
+    <a href="https://www.linkedin.com/in/m-imran-hakim-25ba7336a"
+       target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+
+    <a href="mailto:imr.hakim013@gmail.com">Email</a>
+  </p>
+</footer>
+
+</body>
+</html>

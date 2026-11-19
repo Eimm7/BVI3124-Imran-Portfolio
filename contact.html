@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="Contact Muhammad Imran Hakim bin Latif through email, GitHub or LinkedIn.">
+
+  <title>Contact | Imran Portfolio</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+<!-- 1. NAVIGATION -->
+<header>
+  <nav class="container" aria-label="Main navigation">
+
+    <a class="logo" href="index.html">
+      Imran <span>Portfolio</span>
+    </a>
+
+    <button type="button" id="menuToggle"
+            aria-label="Toggle menu"
+            aria-controls="navLinks"
+            aria-expanded="false">☰</button>
+
+    <ul id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li>
+        <a href="contact.html" class="active"
+           aria-current="page">Contact</a>
+      </li>
+    </ul>
+
+    <button type="button" id="themeToggle"
+            aria-label="Change theme">☀</button>
+
+  </nav>
+</header>
+
+
+<!-- 2. MAIN CONTENT -->
+<main class="container section">
+
+  <h1>Contact Me</h1>
+
+  <p>
+    Feel free to contact me for technical discussions,
+    project enquiries and professional opportunities.
+  </p>
+
+  <div class="grid two">
+
+    <!-- 3. CONTACT INFORMATION -->
+    <section>
+
+      <h2>Contact Information</h2>
+
+      <article class="card">
+
+        <!-- Heading added for W3C validation -->
+        <h3>My Contact Details</h3>
+
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:imr.hakim013@gmail.com">
+            imr.hakim013@gmail.com
+          </a>
+        </p>
+
+        <p>
+          <strong>Location:</strong>
+          Kulai, Johor, Malaysia
+        </p>
+
+        <p>
+          <strong>GitHub:</strong>
+          <a href="https://github.com/Eimm7"
+             target="_blank"
+             rel="noopener noreferrer">
+            My GitHub Profile
+          </a>
+        </p>
+
+        <p>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/m-imran-hakim-25ba7336a"
+             target="_blank"
+             rel="noopener noreferrer">
+            My LinkedIn Profile
+          </a>
+        </p>
+
+      </article>
+
+    </section>
+
+
+    <!-- 4. CONTACT FORM -->
+    <section>
+
+      <h2>Send a Message</h2>
+
+      <form id="contactForm" class="card" novalidate>
+
+        <p>
+          Complete the form below to prepare an email
+          using your default email application.
+        </p>
+
+        <!-- FIELD 1: FULL NAME -->
+        <label for="name">Full Name</label>
+
+        <input type="text"
+               id="name"
+               name="name"
+               placeholder="Enter your full name"
+               autocomplete="name"
+               minlength="2"
+               aria-describedby="nameError"
+               required>
+
+        <small id="nameError"
+               class="error"
+               aria-live="polite"></small>
+
+
+        <!-- FIELD 2: EMAIL -->
+        <label for="email">Email Address</label>
+
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="Enter your email address"
+               autocomplete="email"
+               aria-describedby="emailError"
+               required>
+
+        <small id="emailError"
+               class="error"
+               aria-live="polite"></small>
+
+
+        <!-- FIELD 3: SUBJECT -->
+        <label for="subject">Subject</label>
+
+        <input type="text"
+               id="subject"
+               name="subject"
+               placeholder="Enter your subject"
+               minlength="3"
+               aria-describedby="subjectError"
+               required>
+
+        <small id="subjectError"
+               class="error"
+               aria-live="polite"></small>
+
+
+        <!-- FIELD 4: MESSAGE -->
+        <label for="message">Message</label>
+
+        <textarea id="message"
+                  name="message"
+                  rows="5"
+                  minlength="10"
+                  placeholder="Write your message here"
+                  aria-describedby="messageError"
+                  required></textarea>
+
+        <small id="messageError"
+               class="error"
+               aria-live="polite"></small>
+
+
+        <!-- 5. SUBMIT BUTTON -->
+        <button type="submit" class="btn">
+          Prepare Email
+        </button>
+
+        <!-- 6. FORM FEEDBACK -->
+        <p id="formStatus"
+           role="status"
+           aria-live="polite"></p>
+
+      </form>
+
+      <p>
+        <small>
+          Note: This form opens your email application.
+          It does not send emails automatically.
+        </small>
+      </p>
+
+    </section>
+
+  </div>
+
+</main>
+
+
+<!-- 7. FOOTER -->
+<footer>
+
+  <p>
+    &copy; <span id="currentYear">2026</span>
+    Muhammad Imran Hakim bin Latif
+  </p>
+
+  <p>
+    <a href="https://github.com/Eimm7"
+       target="_blank"
+       rel="noopener noreferrer">
+      GitHub
+    </a> |
+
+    <a href="https://www.linkedin.com/in/m-imran-hakim-25ba7336a"
+       target="_blank"
+       rel="noopener noreferrer">
+      LinkedIn
+    </a> |
+
+    <a href="mailto:imr.hakim013@gmail.com">
+      Email
+    </a>
+  </p>
+
+</footer>
+
+</body>
+</html>
